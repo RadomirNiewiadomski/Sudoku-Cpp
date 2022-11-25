@@ -30,6 +30,6 @@ void Board::insert_element(int row, int column, int guess)
     }
     else
     {
-        cout << "Incorrect position! Choose an empty space from the board (marked as *). Try again";
+        cout << "Incorrect position! Choose an empty space from the board (marked as *). Try again" << endl;
     }
 }
