@@ -1,1 +1,1 @@
-# Sudoku-Cpp
+Terminal sudoku game written in Python.
