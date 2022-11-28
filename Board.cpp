@@ -33,3 +33,33 @@ void Board::insert_element(int row, int column, int guess)
         cout << "Incorrect position! Choose an empty space from the board (marked as *). Try again" << endl;
     }
 }
+
+bool Board::is_board_complete()
+{
+    for (auto row : board)
+    {
+        for (auto element : row)
+        {
+            if (element == "*")
+            {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+bool Board::is_board_correct()
+{
+    for (size_t i{0}; i < 9; ++i)
+    {
+        for (size_t j{0}; j < 9; ++j)
+        {
+            if (board[i][j] != board_correct[i][j])
+            {
+                return false;
+            }
+        }
+    }
+    return true;
+}
