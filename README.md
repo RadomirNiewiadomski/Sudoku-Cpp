@@ -1,1 +1,1 @@
-Terminal sudoku game written in Python.
+Terminal sudoku game written in C++.
